@@ -1,0 +1,51 @@
+html{
+  height: cover;
+  width: cover;
+}
+
+body{
+  position:absolute; 
+  top:0; 
+  bottom:0; 
+  right:0; 
+  left:0;
+  margin: 25px;
+  border: 2px solid #ADD8E6;
+}
+
+input{
+	font-family: courier;
+	font-size: 25px;
+	width: 750px;
+
+}
+
+.container{
+/*  display:flex;
+  flex-direction: column;
+  justify-content: space-around;*/
+  margin: auto 0;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  font-family: courier;
+  font-size: 25px;
+  width: 600px;
+}
+
+.top {
+	margin: 3px;
+}
+
+.bottom{
+
+}
+
+.button {
+
+}
+@media (max-width: 600px){
+  .container{
+    max-width: 500px;
+  }
+}

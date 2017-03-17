@@ -11,41 +11,35 @@ body{
   left:0;
   margin: 25px;
   border: 2px solid #ADD8E6;
+  font-family: courier;
+  font-size: 25px;
 }
 
 input{
 	font-family: courier;
 	font-size: 25px;
-	width: 750px;
+	width: 700px;
 
 }
 
-.container{
-/*  display:flex;
-  flex-direction: column;
-  justify-content: space-around;*/
-  margin: auto 0;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-  font-family: courier;
-  font-size: 25px;
-  width: 600px;
+button{
+	font-family: courier;
+	font-size: 25px;
+	margin: 25px 30px;
 }
+
 
 .top {
-	margin: 3px;
+	margin: 10px 0 0 23px;
 }
 
 .bottom{
-
+	margin: 0 20px;
 }
 
-.button {
 
-}
-@media (max-width: 600px){
-  .container{
-    max-width: 500px;
+@media (max-width: 800px){
+  input{
+    max-width: 100%;
   }
 }

@@ -1,0 +1,23 @@
+<html>
+
+<head>
+</head>
+
+<body>
+	<div id="container">
+		<script id='template' type='text/ractive'>
+
+		    <button on-click='start'>Start!</button>
+		    <button on-click='end'>End!</button>
+			
+		    <div id="time">{{start}}<br>{{diff}} seconds</div>
+		</script>
+
+	</div>
+
+	<script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+	<script src='timer.js'></script>
+	
+</body>
+
+</html>

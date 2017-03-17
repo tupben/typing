@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html>
-	<meta name=viewport content="width=device-width, initial-scale=1">
-  	<head>
-	  	<link rel="stylesheet" type="text/css" href="my_style.css">
-	  	<title>Typing</title>
-  	</head>
-  	<body>
-	  	<div class="container">
-			<div class="top" id="topText">
-				while (a > b) {
-		  	</div>
-		  	<div class="bottom">
-		  		<input type="text" id="myText" placeholder="Type here..." onKeyUp="myFunction()">
-		  	</div>
-		</div>
+<meta name=viewport content='width=device-width, initial-scale=1'>
+<head>
+  	<link rel='stylesheet' type='text/css' href='my_style.css'>
+  	<title>Typing</title>
+</head>
+<body>
+	<div id='container'></div>
+  	<script id='template' type='text/ractive'>
 
-		<script src="typing_script.js"></script>
-  	</body>
+		<button on-click='start'>Start!</button>
+
+		{{#line:i}}
+	    	<div class='top' id='topText{{i}}'>{{this}}</div>
+	    	<div class='bottom'>
+	        	<input type='text' id='myText{{i}}' placeholder='Type here...' onKeyUp='spellCheck({{i}})'><br><br>
+	        </div>
+	    {{/line}}    
+
+    	<button on-click='end'>End!</button>
+    
+	    <div class='bottom'>
+		    <div>{{diff}}{{length}}</div>
+		    <div>{{rate}}</div>
+	   		<h1></h1>
+	    </div>
+
+
+	</script>
+
+	
+
+	  <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+
+	  <script src='typing_script.js'></script>
+	</body>
 </html>

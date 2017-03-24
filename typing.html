@@ -10,15 +10,15 @@
   	<script id='template' type='text/ractive'>
 
 		<button on-click='start'>Start!</button>
-
+		<form name='jumpForm'>
 		{{#line:i}}
 	    	<div class='top' id='topText{{i}}'>{{this}}</div>
 	    	<div class='bottom'>
-	        	<input type='text' id='myText{{i}}' placeholder='Type here...' onKeyUp='spellCheck({{i}})'><br><br>
+	        	<input style='background-color: {{bColor}}' type='text' id={{i}} placeholder='Type here...' onkeyup='spellCheck(this,this.value,{{i}})' ><br><br>
 	        </div>
 	    {{/line}}    
-
-    	<button on-click='end'>End!</button>
+	    </form>
+    	<!-- <button id='here' on-click='end'>End!</button> -->
     
 	    <div class='bottom'>
 		    <div>{{diff}}{{length}}</div>

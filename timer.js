@@ -11,9 +11,6 @@ var ractive = new Ractive({
 });
 
 
-
-//document.getElementById("time").innerHTML = startTime;
-
 ractive.on( 'start', function () {
   ractive.set('start', new Date())
   console.log(ractive.get('start'));
